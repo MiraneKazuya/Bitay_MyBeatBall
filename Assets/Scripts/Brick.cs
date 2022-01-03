@@ -14,14 +14,14 @@ public class Brick : MonoBehaviour
 
     void Start()
     {
-        //transform.Rotate(rotator * (transform.position.x + transform.position.y) * 0.1f);
+        transform.Rotate(rotator * (transform.position.x + transform.position.y) * 0.1f);
         _renderer = GetComponent<Renderer>();
         _orgMaterial = _renderer.sharedMaterial;
     }
 
     void Update()
     {
-        //transform.Rotate(rotator * Time.deltaTime);
+        transform.Rotate(rotator * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)
